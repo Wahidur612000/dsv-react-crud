@@ -1,0 +1,36 @@
+export const userFormSchema = [
+  {
+    name: "firstName",
+    label: "First Name",
+    type: "text",
+    required: true,
+    requiredMessage: "First name is required",
+    pattern: /^[A-Z][a-zA-Z]*$/,
+    patternMessage: "First name must start with a capital letter",
+  },
+  {
+    name: "lastName",
+    label: "Last Name",
+    type: "text",
+    required: true,
+    requiredMessage: "Last name is required",
+  },
+  {
+    name: "phone",
+    label: "Phone Number",
+    type: "tel",
+    required: true,
+    requiredMessage: "Phone number is required",
+    pattern: /^[0-9]{10}$/,
+    patternMessage: "Phone number must be exactly 10 digits",
+  },
+  {
+    name: "email",
+    label: "Email Address",
+    type: "email",
+    required: true,
+    requiredMessage: "Email is required",
+    pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+    patternMessage: "Enter a valid email address",
+  },
+];
