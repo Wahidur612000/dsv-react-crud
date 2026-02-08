@@ -70,8 +70,8 @@ src/
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd <project-folder>
+git clone https://github.com/Wahidur612000/dsv-react-crud.git
+cd dsv-react-crud
 ```
 
 ---
