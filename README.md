@@ -71,7 +71,7 @@ src/
 
 ```bash
 git clone https://github.com/Wahidur612000/dsv-react-crud.git
-cd dsv-react-crud
+cd dsv-react-crud/frontend
 ```
 
 ---
@@ -200,6 +200,10 @@ npm run build
 * Focus is on frontend architecture and extensibility
 
 ---
+
+### Backend Deployment
+JSON Server is deployed separately on Render to support persistent CRUD operations in production.
+The frontend consumes the backend via environment-based API configuration.
 
 ## 📄 License
 
