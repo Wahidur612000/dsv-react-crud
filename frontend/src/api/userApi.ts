@@ -1,6 +1,13 @@
 import type{ User } from "../types/user";
 
-const BASE_URL = "http://localhost:3000/users";
+const isLocalhost =
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1";
+
+const BASE_URL = isLocalhost
+  ? import.meta.env.VITE_API_URL_LOCAL
+  : import.meta.env.VITE_API_URL_PROD;
+
 
 export const getUsers = async (): Promise<User[]> => {
   const res = await fetch(BASE_URL);
